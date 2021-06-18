@@ -1,0 +1,988 @@
+<html>
+<head>
+<title>Music</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<style>
+a:link {text-decoration: none;color:red;}
+a:visited {color:green；text-decoration:none;}
+a:hover  {color:blue;text-decoration:underline;}
+a:active {color:orange;text-decoration:blink;}
+</style>
+<SCRIPT>
+    function isHidden(oDiv){
+      var vDiv = document.getElementById(oDiv);
+      vDiv.style.display = (vDiv.style.display == 'none')?'block':'none';
+    }
+</SCRIPT>
+
+<script type="text/javascript">
+function saveStorage(id)
+{
+	var data = document.getElementById(id).value;
+	if(data.value != " ")
+	{
+    var time = new Date().getTime();
+    localStorage.setItem(time,data);
+    alert("❤❤❤评论成功❤❤❤");
+    loadStorage('msg');
+	}
+	else
+	{
+	alert("！！！请输入您对于这首歌的评论！！！");
+	}
+}
+function loadStorage(id)
+{
+    var result = '<table border="0">';
+    for(var i = 0;i < localStorage.length;i++)
+    {
+        var key = localStorage.key(i);
+        var value = localStorage.getItem(key);
+        var date = new Date();
+        date.setTime(key);
+        var datestr = date.toGMTString();
+        result += '<tr><td>' + value + '</td><td>' + datestr + '</td></tr>';
+    }
+    result += '</table>';
+    var target = document.getElementById(id);
+    target.innerHTML = result;
+}
+function clearStorage()
+{
+ if(localStorage.length > 0)
+    {
+    if(window.confirm("重置评论后不可恢复，是否确认删除我的当前的评论？"))
+    {
+    localStorage.clear();
+    alert("您的当前评论已删除");
+    loadStorage('msg');
+    }
+    }
+    else
+    {
+        alert("没有需要删除的评论！期待您的评论！");
+    }
+	
+    
+}
+</script>
+
+<style>
+body{
+height:1000px;
+}
+.rTop{
+width:100px; height:25px;
+text-align:center; font-size:small;
+line-height:25px; border:1px solid #999;
+position:fixed; right:0; bottom:0;
+border-bottom-color:#FF0000; 
+border-top-color:#FF0000; 
+border-left-color:#FF0000; 
+border-right-color:#FF0000; margin:5px;
+cursor:pointer; display:none
+}
+</style>
+<style>
+button{border:0px;background-color:transparent;}
+</style>
+<style>
+audio{
+
+width:1000px;
+}
+</style>
+
+<style>
+video{
+height:600px;
+width:1000px;
+}
+</style>
+
+
+<script>
+<!--拖动滚动条或滚动鼠标轮-->
+window.onscroll=function(){
+if(document.body.scrollTop||document.documentElement.scrollTop>0){
+document.getElementById('rTop').style.display="block"
+}else{
+document.getElementById('rTop').style.display="none"
+}
+}
+<!--点击“回到顶部”按钮-->
+function toTop(){
+window.scrollTo('0','0');
+document.getElementById('rTop').style.display="none"
+}
+</script>
+
+</head>
+
+<body style=" background-repeat:no-repeat ;background-size:100% 100%; background-attachment: fixed;" background="images/1113.jpg@!1920" bgproperties="fixed" bgcolor="#000000" text="#FFFFFF" >
+<div class="rTop" id="rTop" onClick="toTop()"><font color="#FFFFFF"><b>↑↑↑返回顶部</b></font></div>
+
+<table width="100%" border="0"  cellpadding="0" height="77">
+<tr>
+<td align="left" width="300"><h1 align="center"><a href="index.html"><font color="#FF0000" face="华文彩云" size="20">Music</font></a></h1></td>
+<td align="right"><a href="结业报告.html"><font color="#FFFFFF" face="黑体" size="4">web结业报告</font></a></td>
+<td align="right"><a href="推荐.html"><font color="#FFFFFF" face="黑体" size="4">推荐</font></a></td>
+<td align="right"><a href="乐库.html"><font color="#FFFFFF" face="黑体" size="4">乐库</font></a></td>
+<td align="right"><a href="看点.html"><font color="#FFFFFF" face="黑体" size="4"><b>看点</b></font></a></td>
+<td align="right"><a href="排行.html"><font color="#FFFFFF" face="黑体" size="4">排行</font></a></td>
+<td align="right"><a href="视频.html"><font color="#FFFFFF" face="黑体" size="4">视频</font></a></td>
+<td align="right"><a href="搜索.html"><font color="#FFFFFF" face="黑体" size="4">搜索</font></a></td>
+<td align="right"><a href="立刻听歌.html"><font color="#FFFFFF" face="黑体" size="4">立刻听歌</font></a></td>
+</tr>
+</table>
+
+<hr width="100%" size="3" color="#FF0000" noshade="noshade">
+
+<br />
+<br />
+<br />
+
+
+
+
+
+<div style="border: 0px solid #000000; width: 1000px; margin: 0 auto;">
+<h1 align="left"><a href=" "><font color="#FFFFFF" face="微软雅黑" size="8"><b>人人都是幼鸟 在这孤独的世界 我与你同行</b></font></a>
+&nbsp;
+<br />
+
+<div>
+<img src="images/1114.jpg" width="1000px" height="430">
+</div>
+
+<br />
+
+<table cellspacing="7" cellpadding="15" border="7px" bordercolor="#FFFFFF">
+
+<tr>
+
+	<td><a href=" "><font color="#FFFFFF">收藏文章♥</font></a></td>
+	<td><a href="#包含音乐"><font color="#FFFFFF">包含音乐▶</font></a></td>
+	<td><a href="#相关阅读"><font color="#FFFFFF">相关阅读✈</font></a></td>
+	<td><a href="#该作者更多"><font color="#FFFFFF">该作者更多▦</font></a></td>
+	<td><a href="#查看评论"><font color="#FFFFFF">查看评论▶</font></a></td>
+
+
+</table>
+<br />
+<div>
+	<style>
+		*{
+			margin: 2;
+			padding: 2;
+		}
+		.left,.right{
+			
+			border:0px solid #dcdcdc;
+			padding: 7px;
+		}
+		.left{
+			width: 60%;
+			float: left;
+		}
+		.right{
+			width: 30%;
+			float: right;
+			
+		}
+
+		
+	</style>
+<div class="left">
+<p>&nbsp;<font color="##A8A8A8" size="3">“愿你我仍在平凡的世界里，还是那个不被人理解和不循规蹈矩的创造者。”</font></p>
+<pre>
+<p style="margin=10px;cellpadding=10px">&nbsp;&nbsp;&nbsp;<font color="#DCDCDC" face="等线" size="4">
+	5月31日 第一首主打《城市傍晚》已上线
+
+	6月9日 第二首主打《海上日记》已上线
+	
+	6月18日 第三首主打上线
+	
+	6月25日 全专上线
+	
+	毛不易 第三张个人全新创作专辑
+	
+	《幼鸟指南》
+	
+	集结11首全新创作 一览11个人生音乐坐标
+	
+	人生和创作的旅途 如幼鸟飞向南方
+	
+	幼鸟在半空相遇
+	
+	群山里、海中央
+	
+	城市傍晚的十字路口
+	
+	爱是雾中的灯塔
+	
+	这孤独的世界
+	
+	你并不孤独
+	
+	我与你同行
+	
+	写实主义音乐诗人 毛不易 人间观察 音乐实录 《幼鸟指南》
+	
+	11首全新创作，11个人生音乐坐标，仿佛是他在这两年的见闻分享和真实记录。
+	
+	人人都是幼鸟 在这孤独的世界 我与你同行
+	
+	天空可能会阴霾灰暗，但幼鸟的心一直向南。
+	
+	毛不易 《幼鸟指南》音乐地图坐标系
+	
+	毛不易的感受，荒井老师的编曲，让歌有了更美好的感觉。
+	
+	1.城市傍晚 @【遗憾】
+	
+	发生着这样那样的平凡故事，其中有我也有你。
+	
+	2.海上日记 @【告别】
+	
+	当年出发的港口早已不知所踪，而所谓的彼岸也无迹可循。</font></p>
+</pre>
+
+<!-- <div>
+<img src="images/new2.png" width="500px" height="220">
+</div>
+ -->
+
+<p style="margin=10px;cellpadding=10px">&nbsp;&nbsp;&nbsp;<font color="#DCDCDC" face="等线" size="4">
+	总有一种感情，让你不求回报地想给予对方一切，让你对未来充满期待，
+	它可能不够轰轰烈烈，也未必会天荒地老，
+	但只要你未来某天想起它时，心里还会浮起一丝暖意，这便是它的全部意义。</font></p>
+
+<pre>
+
+</pre>
+
+<p style="margin=10px;cellpadding=10px">&nbsp;&nbsp;&nbsp;<font color="#DCDCDC" face="等线" size="4">
+	给我个机会重来一次，我也不会想要去改变什么，因为有遗憾，才能显出来那些不遗憾的好。</font></p>
+
+<pre>
+
+</pre>
+
+<p style="margin=10px;cellpadding=10px">&nbsp;&nbsp;&nbsp;<font color="#DCDCDC" face="等线" size="4">
+	可时光啊，不听话，总催着人长大，这一站到下一站旅途总是停不下。</font></p>
+
+<pre>
+
+</pre>
+
+<div>
+<img src="images/1115.jfif" width="500px" height="320">
+</div>
+
+
+<pre>
+
+</pre>
+
+<p style="margin=10px;cellpadding=10px">&nbsp;&nbsp;&nbsp;<font color="#DCDCDC" face="等线" size="4">
+	这个世界上,还有很多不被认可的梦想,不被祝福的感情,不被眷顾的孩子,他们不曾犯错,却只能颤颤巍巍,单薄地行走在路上，
+	这首歌送给他们,借天地万物,不求终将到达某处,只求路上少些阻碍,让他们通往平凡。</font></p>
+
+</div>
+
+<div class="right">
+<p><font color="#FFFFFF" face="微软雅黑" size="5"><b>毛不易简介</b>                                </font>
+<hr size="1">
+<p>&nbsp;&nbsp;&nbsp;<font color="#FFFFFF" face="微软雅黑" size="2">
+	毛不易，本名王维家，1994年10月1日出生于黑龙江省齐齐哈尔市泰来县，中国内地流行乐男歌手，毕业于杭州师范大学护理专业。
+	2017年，参加腾讯视频选秀娱乐节目《明日之子》，获得全国总决赛冠军，从而正式进入演艺圈 [1]  ；11月11日，推出个人原创单曲《项羽虞姬》 [2]  ；12月28日，获得
+	腾讯娱乐白皮书音乐年度之星奖 [3]  。2018年1月7日，获得首届金鲛奖年度十佳网络新星奖 [4]  ；4月，作为“无限唱作人”参加江
+	苏卫视音乐唱作类真人秀节目《无限歌谣季》 [5]  ；5月31日，推出首张个人录音室专辑《平凡的一天》 [6]  ；同年，获得亚洲新歌榜
+	年度盛典年度最佳音乐人奖 [7]  、亚洲音乐盛典最具潜力男歌手奖、年度最佳唱作人奖 [8]  。2019年3月25日，其演唱的歌曲《平凡的一天
+	》获得第26届东方风云榜音乐盛典十大金曲奖、最佳作词奖 [9]  ；8月，获2019福布斯中国100名人榜荣誉 [10]  。2020年1月，以首发歌手身份
+	加盟湖南卫视音乐竞技节目《歌手·当打之年》 [11]  ；1月22日，推出第2张个人音乐专辑《小王》 [12]  。9月20日，举办毛不易2020“像我这样的
+	人”线上演唱会 [13]  。</font></p>
+&nbsp;<p><font color="#FFFFFF" face="微软雅黑" size="3"><b>人生经历</b></p>  
+<p>&nbsp;&nbsp;&nbsp;<font color="#FFFFFF" face="微软雅黑" size="2">从小自学吉他和低音提琴，后师从低音提琴演奏家尹富源教授。
+	2017年，参加腾讯视频选秀娱乐节目《明日之子》，最终以1400多万的粉推人气获得全国总决赛冠军，并得到了白金唱片及“最强厂牌”的称号 [1]  ；
+	比赛期间，毛不易共演唱了14首原创歌曲，其中《消愁》的播放量24小时破千万、首周破亿 [20]  ，并在酷狗单曲畅销榜中蝉联3个月冠军 [21]
+	  ；9月1日，推出首张个人现场专辑《巨星不易工作室 No.1》，收录了包括《像我这样的人》、《消愁》等在内的7首歌曲，该专辑陆续在海外
+	  各大音乐平台上架，并登上KKBOX新曲速报歌单推荐榜，他也因此正式进军海外 [22]  。
+2008年参与制作赵薇专辑《我们都是大导演》，并担任发布会表演嘉宾；同年担任陈坤专辑《谜&Me》的专辑制作人。</font></p>
+<!--<div id="target3" hidden="true" style="display:none">-->
+<p>&nbsp;&nbsp;&nbsp;<font color="#FFFFFF" face="微软雅黑" size="2">
+	11月4日，以“星小编”的身份做客网易娱乐明星互动直播栏目《娱乐新鲜派》 [23]  
+	；同年，参加“明日之子2017全国巡回演唱会” [24]  ；随后，参加湖南卫视脱口秀节目
+	《天天向上》的录制，这是他的电视综艺首秀 [25]  ；11月11日，推出个人原创单曲《项羽
+	虞姬》 [2]  ；此外，他还为迪士尼电影《寻梦环游记》演唱了主题曲《请记住我》 [26]  ；11月
+	23日，获得网易年度有态度大赏年度最有态度唱作歌手奖 [27]  ；12月3日，获得腾讯视频星光大赏年度音
+	乐新势力奖 [28]  ；12月14日，推出第2张个人现场专辑《巨星不易工作室 No.2》；12月18日，为电影《卧底巨
+	星》演唱的推广曲《感觉自己是巨星》正式上线 [29]  ；12月25日，为电影《无问西东》演唱的宣传曲《无问》正式上线
+	；12月28日，获得腾讯娱乐白皮书音乐年度之星奖 [3]  ；12月31日，参加江苏卫视跨年演唱会，演唱了《消愁》。
+</font></p>
+<!--</div>
+<DIV style="cursor:hand" onclick="isHidden('target3')" align="right"><font size="2px" color="#FFFFFF">展开全部</font></DIV>
+-->
+&nbsp;
+<h1 align="left"><a name="相似歌手"><font color="#FFFFFF" face="微软雅黑" size="5"><b>相似人物歌手</b></font></a></h1>
+<hr size="1">
+&nbsp;
+
+<table  width="100%" border="0" align="center" cellpadding="5" style="font_size:16px" color="#FFFFFF" style="margin:auto;">
+<tr>
+	<td><a href="立刻听歌.html"><img src="images/7066195351418187465.jpg@1e_1c_100Q_100w_100h" height="100" width="100" /></a></td>
+	<td><a href="立刻听歌.html"><img src="images/21003723191470712635.jpg@1e_1c_100Q_100w_100h" height="100" width="100" /></a></td>
+</tr>
+
+<tr>
+<td><a href="歌手.html"><font color="#6C6C6C" face="微软雅黑"size="2">♬陈粒</font></a></td>
+<td><a href="歌手.html"><font color="#6C6C6C" face="微软雅黑"size="2">♬小半</font></a></td>
+</tr>
+<br />
+</table>
+
+<table  width="100%" border="0" align="center" cellpadding="5" style="font_size:16px" color="#FFFFFF" style="margin:auto;">
+<tr>
+	<td><a href="立刻听歌.html"><img src="images/1674421470122216.jpg@1e_1c_100Q_100w_100h" height="100" width="100" /></a></td>
+	<td><a href="立刻听歌.html"><img src="images/15374364697909.jpg@1e_1c_100Q_100w_100h" height="100" width="100" /></a></td>
+</tr>
+
+<tr>
+<td><a href="歌手.html"><font color="#6C6C6C" face="微软雅黑"size="2">♬五月天</font></a></td>
+<td><a href="歌手.html"><font color="#6C6C6C" face="微软雅黑"size="2">♬阿黛尔Adode</font></a></td>
+</tr>
+<br />
+</table>
+
+<table  width="100%" border="0" align="center" cellpadding="5" style="font_size:16px" color="#FFFFFF" style="margin:auto;">
+<tr>
+	<td><a href="立刻听歌.html"><img src="images/21002904081458280614.jpg@1e_1c_100Q_100w_100h" height="100" width="100" /></a></td>
+	<td><a href="立刻听歌.html"><img src="images/1675891330309511.jpg@1e_1c_100Q_100w_100h" height="100" width="100" /></a></td>
+</tr>
+
+<tr>
+
+<td><a href="歌手.html"><font color="#6C6C6C" face="微软雅黑"size="2">♬李宗盛</font></a></td>
+<td><a href="歌手.html"><font color="#6C6C6C" face="微软雅黑"size="2">♬陈奕迅</font></a></td>
+</tr>
+
+<br />
+</table>
+
+
+</div>
+
+
+</div>
+
+<hr align= "left" width="100%" size="0.009" color="#FFFFFF" noshade="noshade">
+
+
+
+<br />
+<br />
+</div>
+
+
+<div style="border: 0px solid #000000; width: 1000px; margin: 0 auto;">
+
+<h1 align="left"><a name="包含音乐"><font color="#FFFFFF" face="微软雅黑" size="6"><b>包含音乐▶</b></font></a></h1>
+		<table border="0"  cellpadding="5">
+			<tr>
+				<td><font color="#DC143C" face="等线" size="6"><b>1</b></font><a href="index.html"><font color="#FFFFFF" face="等线" size="4">陷阱</font></a>
+				<p><a href="推荐.html"><font color="#A9A9A9" face="微软雅黑"size="2">王北车</font></a></p></td>			   
+			</tr>                                     
+			<tr>                                      
+				<td><font color="#DC143C" face="等线" size="6"><b>2</b></font><a href="index.html"><font color="#FFFFFF" face="等线" size="4">那是你离开了北京的生活</font></a>
+				<p><a href="推荐.html"><font color="#A9A9A9" face="微软雅黑"size="2">薛之谦</font></a></p></td>				
+			</tr>                                      
+			<tr>                                       
+				<td><font color="#DC143C" face="等线" size="6"><b>3</b></font><a href="index.html"><font color="#FFFFFF" face="等线" size="4">年少有为</font></a>
+				<p><a href="推荐.html"><font color="#A9A9A9" face="微软雅黑"size="2">李荣浩</font></a></p></td>
+			</tr>                                      
+
+		</table>
+
+
+
+
+
+<br />
+<br />
+
+<h1 align="left"><a name="查看评论"><font color="#FFFFFF" face="微软雅黑" size="6"><b>查看评论▶</b></font></a></h1>
+
+<form id="clearFrom">
+<div align="center">
+<textarea 
+id="memo" cols="93" rows="3"   style="background:transparent;border=4;color:#FFFFFF;font-size:20px;font-color:微软雅黑;"></textarea><br />
+<style>memeo="font-size:36px; color:#FFFFFF" </style>
+</div>
+
+
+<div align="right">
+
+<input type="button" value="发布评论" onclick="saveStorage('memo');">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<input type="button" value="查看评论" onclick="loadStorage('msg');">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="button" value="删除评论" onclick="clearStorage('msg');">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="button" value="重置内容" id="clearText"/>
+<p id="msg"></p>
+</div>
+</form>
+
+<script>
+    var _clearText=document.getElementById("clearText");
+    _clearText.onclick=function(){
+        var _elements=document.getElementById("clearFrom").elements,
+                _elementsLen=_elements.length,
+                _ei=null,
+                i=0;
+        for(;i<_elementsLen;i++){
+            _ei=_elements[i];
+            //如果是文本类型，将其修改为空
+            (_ei.type=="text"||_ei.type=="textarea")&&(_ei.value="");
+        }
+    }
+</script>
+
+<br />
+<br />
+<h1 align="left"><font color="#FFFFFF" face="微软雅黑" size="4"><b>精彩评论▦</b></font></h1>
+<hr align= "left" width="100%" color="#FF0000" noshade="noshade" size="1">
+<div style="margin: 0 auto;font-size:18px;font-color:微软雅黑;">
+<br />
+<a href=""><font color="#FF0000" size="3px"><b>毛不易</b></font></a>：
+<font size="4">每个人都认为自己是特别的那个点，但是走入人群中，就汇入人流里.</font>
+<br />
+<br />
+<div align="left">
+&nbsp;&nbsp;&nbsp;
+<font color="#D3D3D3" size="2px">2018年10月22日 22:12</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href=""><font color="#F5F5F5" size="2px">赞(11w)</font></a>
+<a href=""><font color="#F5F5F5" size="2px">回复</font></a>
+<a href=""><font color="#F5F5F5" size="2px">分享</font></a>
+<a href=""><font color="#F5F5F5" size="2px">举报</font></a>
+</div>
+<hr size="1">
+<br />
+
+<br />
+<a href=""><font color="#00FFFF" size="3px"><b>NgSeven7</b></font></a>：
+<font size="4">你啊年少有为 而我年幼无知 可能因为这样 我们之间才不可能吧</font>
+<br />
+<br />
+<div align="left">
+&nbsp;&nbsp;&nbsp;
+<font color="#D3D3D3" size="2px">2018年11月22日 22:12</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href=""><font color="#F5F5F5" size="2px">赞(10w)</font></a>
+<a href=""><font color="#F5F5F5" size="2px">回复</font></a>
+<a href=""><font color="#F5F5F5" size="2px">分享</font></a>
+<a href=""><font color="#F5F5F5" size="2px">举报</font></a>
+</div>
+<hr size="1">
+<br />
+
+<br />
+<a href=""><font color="#00FFFF" size="3px"><b>港岛妹妹没有给我西班牙馅饼</b></font></a>：
+<font size="4">有人说，听李荣浩的歌，会有一种真切的痛感，因为他的歌声里总是带着几分自嘲，几分玩笑，几分不愿向现实妥协的倔强。
+他有一种独特的属于自己的调调，在一些难过的夜里，李荣浩的声音很温柔。</font>
+<br />
+<br />
+<div align="left">
+&nbsp;&nbsp;&nbsp;
+<font color="#D3D3D3" size="2px">2018年11月2日 12:12</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href=""><font color="#F5F5F5" size="2px">赞(9.9w)</font></a>
+<a href=""><font color="#F5F5F5" size="2px">回复</font></a>
+<a href=""><font color="#F5F5F5" size="2px">分享</font></a>
+<a href=""><font color="#F5F5F5" size="2px">举报</font></a>
+</div>
+<hr size="1">
+<br />
+
+
+<br />
+<a href=""><font color="#00FFFF" size="3px"><b>青梗啊_</b></font></a>：
+<font size="4">在年轻的时候 , 如果你爱上了一个人
+请你 , 请你一定一定要温柔地对待他
+长大了以后 , 你才会知道 , 在蓦然回首的刹那
+没有怨恨的青春才会了无遗憾
+如山冈上那轮静静的满月</font>
+<br />
+<br />
+<div align="left">
+&nbsp;&nbsp;&nbsp;
+<font color="#D3D3D3" size="2px">2018年4月2日 12:12</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href=""><font color="#F5F5F5" size="2px">赞(9.3w)</font></a>
+<a href=""><font color="#F5F5F5" size="2px">回复</font></a>
+<a href=""><font color="#F5F5F5" size="2px">分享</font></a>
+<a href=""><font color="#F5F5F5" size="2px">举报</font></a>
+</div>
+<hr size="1">
+<br />
+
+<br />
+<a href=""><font color="#00FFFF" size="3px"><b>灾判</b></font></a>：
+<font size="4">总不能还没有努力就向生活妥协</font>
+<br />
+<br />
+<div align="left">
+&nbsp;&nbsp;&nbsp;
+<font color="#D3D3D3" size="2px">2018年4月12日 02:12</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href=""><font color="#F5F5F5" size="2px">赞(8.3w)</font></a>
+<a href=""><font color="#F5F5F5" size="2px">回复</font></a>
+<a href=""><font color="#F5F5F5" size="2px">分享</font></a>
+<a href=""><font color="#F5F5F5" size="2px">举报</font></a>
+</div>
+<hr size="1">
+<br />
+
+<br />
+<a href=""><font color="#00FFFF" size="3px"><b>抹茶味的可乐-</b></font></a>：
+<font size="4">我发现很多年少有为的人都是经历过很大的苦难挺过来才有今天的风光，所以你年少时吃过的苦终有一天会成为你站到人生高处的基石。 ​</font>
+<br />
+<br />
+<div align="left">
+&nbsp;&nbsp;&nbsp;
+<font color="#D3D3D3" size="2px">2018年4月2日 12:12</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href=""><font color="#F5F5F5" size="2px">赞(9.3w)</font></a>
+<a href=""><font color="#F5F5F5" size="2px">回复</font></a>
+<a href=""><font color="#F5F5F5" size="2px">分享</font></a>
+<a href=""><font color="#F5F5F5" size="2px">举报</font></a>
+</div>
+<hr size="1">
+<br />
+
+
+<div id="target2" hidden="true" style="display:none">
+<br />
+<a href=""><font color="#00FFFF" size="3px"><b>三千世界鸦杀尽与尔共寝到天明</b></font></a>：
+<font size="4">最无能为力的年纪 遇见了你 要是我成熟一点 会不会结果不一样</font>
+<br />
+<br />
+<div align="left">
+&nbsp;&nbsp;&nbsp;
+<font color="#D3D3D3" size="2px">2018年11月22日 22:12</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href=""><font color="#F5F5F5" size="2px">赞(10w)</font></a>
+<a href=""><font color="#F5F5F5" size="2px">回复</font></a>
+<a href=""><font color="#F5F5F5" size="2px">分享</font></a>
+<a href=""><font color="#F5F5F5" size="2px">举报</font></a>
+</div>
+<hr size="1">
+<br />
+
+<br />
+<a href=""><font color="#00FFFF" size="3px"><b>港岛妹妹没有给我西班牙馅饼</b></font></a>：
+<font size="4">有人说，听李荣浩的歌，会有一种真切的痛感，因为他的歌声里总是带着几分自嘲，几分玩笑，几分不愿向现实妥协的倔强。
+他有一种独特的属于自己的调调，在一些难过的夜里，李荣浩的声音很温柔。</font>
+<br />
+<br />
+<div align="left">
+&nbsp;&nbsp;&nbsp;
+<font color="#D3D3D3" size="2px">2018年11月2日 12:12</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href=""><font color="#F5F5F5" size="2px">赞(9.9w)</font></a>
+<a href=""><font color="#F5F5F5" size="2px">回复</font></a>
+<a href=""><font color="#F5F5F5" size="2px">分享</font></a>
+<a href=""><font color="#F5F5F5" size="2px">举报</font></a>
+</div>
+<hr size="1">
+<br />
+
+
+<br />
+<a href=""><font color="#00FFFF" size="3px"><b>青梗啊_</b></font></a>：
+<font size="4">在年轻的时候 , 如果你爱上了一个人
+请你 , 请你一定一定要温柔地对待他
+长大了以后 , 你才会知道 , 在蓦然回首的刹那
+没有怨恨的青春才会了无遗憾
+如山冈上那轮静静的满月</font>
+<br />
+<br />
+<div align="left">
+&nbsp;&nbsp;&nbsp;
+<font color="#D3D3D3" size="2px">2018年4月2日 12:12</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href=""><font color="#F5F5F5" size="2px">赞(9.3w)</font></a>
+<a href=""><font color="#F5F5F5" size="2px">回复</font></a>
+<a href=""><font color="#F5F5F5" size="2px">分享</font></a>
+<a href=""><font color="#F5F5F5" size="2px">举报</font></a>
+</div>
+<hr size="1">
+<br />
+
+<br />
+<a href=""><font color="#00FFFF" size="3px"><b>余温不见</b></font></a>：
+<font size="4">我不是男主角，一开始就知道了，没有天降光环，不是气运之子，没有显赫的家室或是逆天的气质，但我还是想做你的盖世英雄，为你遮风挡雨，与你同舟共度。</font>
+<br />
+<br />
+<div align="left">
+&nbsp;&nbsp;&nbsp;
+<font color="#D3D3D3" size="2px">2018年4月12日 02:12</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href=""><font color="#F5F5F5" size="2px">赞(8.3w)</font></a>
+<a href=""><font color="#F5F5F5" size="2px">回复</font></a>
+<a href=""><font color="#F5F5F5" size="2px">分享</font></a>
+<a href=""><font color="#F5F5F5" size="2px">举报</font></a>
+</div>
+<hr size="1">
+<br />
+
+<br />
+<a href=""><font color="#00FFFF" size="3px"><b>想请你吃饭</b></font></a>：
+<font size="4">赵希，我知道</font>
+<font size="4"><p>我无法成为你的伴侣，与你同行                                    </p></font>
+<font size="4"><p>在我们眼所能见耳所能听的这个世界上，上帝不会将我的手置于你的手中</p></font>
+<font size="4"><p>这些，我都已经答应过了                                          </p></font>
+<font size="4"><p>我会一直记得那时候的爱情是三块钱一杯的柠檬汁                    </p></font>
+<font size="4"><p>是我陪伴你游戏二十块钱一个的通宵                                </p></font>
+<font size="4"><p>是你快步走我总紧随 是你。                                       </p></font>
+<br />
+<br />
+<div align="left">
+&nbsp;&nbsp;&nbsp;
+<font color="#D3D3D3" size="2px">2018年4月2日 12:12</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href=""><font color="#F5F5F5" size="2px">赞(3.3w)</font></a>
+<a href=""><font color="#F5F5F5" size="2px">回复</font></a>
+<a href=""><font color="#F5F5F5" size="2px">分享</font></a>
+<a href=""><font color="#F5F5F5" size="2px">举报</font></a>
+</div>
+<hr size="1">
+<br />
+</div>
+
+<DIV style="cursor:hand" onclick="isHidden('target2')" align="right"><font size="2px" color="#FFFFFF">查看更多</font></DIV>
+
+
+<br />
+<br />
+<h1 align="left"><font color="#FFFFFF" face="微软雅黑" size="4"><b>最新评论▦(158953)</b></font></h1>
+<hr align= "left" width="100%" color="#FF0000" noshade="noshade" size="1">
+<div style="margin: 0 auto;font-size:18px;font-color:微软雅黑;">
+<br />
+<a href=""><font color="#00FFFF" size="3px"><b>荣浩</b></font></a>：
+<font size="4">假如我 年少有为......我就要想,,,</font>
+<br />
+<br />
+<div align="left">
+&nbsp;&nbsp;&nbsp;
+<font color="#D3D3D3" size="2px">2018年11月29日 12:17</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href=""><font color="#F5F5F5" size="2px">赞</font></a>
+<a href=""><font color="#F5F5F5" size="2px">回复</font></a>
+<a href=""><font color="#F5F5F5" size="2px">分享</font></a>
+<a href=""><font color="#F5F5F5" size="2px">举报</font></a>
+</div>
+<hr size="1">
+<br />
+
+<br />
+<a href=""><font color="#00FFFF" size="3px"><b>NgSeven7</b></font></a>：
+<font size="4">你啊年少有为 而我年幼无知 可能因为这样 我们之间才不可能吧</font>
+<br />
+<br />
+<div align="left">
+&nbsp;&nbsp;&nbsp;
+<font color="#D3D3D3" size="2px">2018年11月29日 12:16</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href=""><font color="#F5F5F5" size="2px">赞</font></a>
+<a href=""><font color="#F5F5F5" size="2px">回复</font></a>
+<a href=""><font color="#F5F5F5" size="2px">分享</font></a>
+<a href=""><font color="#F5F5F5" size="2px">举报</font></a>
+</div>
+<hr size="1">
+<br />
+
+<br />
+<a href=""><font color="#00FFFF" size="3px"><b>港岛妹妹没有给我西班牙馅饼</b></font></a>：
+<font size="4">有人说，听李荣浩的歌，会有一种真切的痛感，因为他的歌声里总是带着几分自嘲，几分玩笑，几分不愿向现实妥协的倔强。
+他有一种独特的属于自己的调调，在一些难过的夜里，李荣浩的声音很温柔。</font>
+<br />
+<br />
+<div align="left">
+&nbsp;&nbsp;&nbsp;
+<font color="#D3D3D3" size="2px">2018年11月29日 12:15</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href=""><font color="#F5F5F5" size="2px">赞</font></a>
+<a href=""><font color="#F5F5F5" size="2px">回复</font></a>
+<a href=""><font color="#F5F5F5" size="2px">分享</font></a>
+<a href=""><font color="#F5F5F5" size="2px">举报</font></a>
+</div>
+<hr size="1">
+<br />
+
+
+<br />
+<a href=""><font color="#00FFFF" size="3px"><b>青梗啊_</b></font></a>：
+<font size="4">在年轻的时候 , 如果你爱上了一个人
+请你 , 请你一定一定要温柔地对待他
+长大了以后 , 你才会知道 , 在蓦然回首的刹那
+没有怨恨的青春才会了无遗憾
+如山冈上那轮静静的满月</font>
+<br />
+<br />
+<div align="left">
+&nbsp;&nbsp;&nbsp;
+<font color="#D3D3D3" size="2px">2018年11月29日 12:14</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href=""><font color="#F5F5F5" size="2px">赞</font></a>
+<a href=""><font color="#F5F5F5" size="2px">回复</font></a>
+<a href=""><font color="#F5F5F5" size="2px">分享</font></a>
+<a href=""><font color="#F5F5F5" size="2px">举报</font></a>
+</div>
+<hr size="1">
+<br />
+
+<br />
+<a href=""><font color="#00FFFF" size="3px"><b>灾判</b></font></a>：
+<font size="4">总不能还没有努力就向生活妥协</font>
+<br />
+<br />
+<div align="left">
+&nbsp;&nbsp;&nbsp;
+<font color="#D3D3D3" size="2px">2018年11月29日 12:13</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href=""><font color="#F5F5F5" size="2px">赞</font></a>
+<a href=""><font color="#F5F5F5" size="2px">回复</font></a>
+<a href=""><font color="#F5F5F5" size="2px">分享</font></a>
+<a href=""><font color="#F5F5F5" size="2px">举报</font></a>
+</div>
+<hr size="1">
+<br />
+
+<br />
+<a href=""><font color="#00FFFF" size="3px"><b>抹茶味的可乐-</b></font></a>：
+<font size="4">我发现很多年少有为的人都是经历过很大的苦难挺过来才有今天的风光，所以你年少时吃过的苦终有一天会成为你站到人生高处的基石。 ​</font>
+<br />
+<br />
+<div align="left">
+&nbsp;&nbsp;&nbsp;
+<font color="#D3D3D3" size="2px">2018年11月29日 12:12</font>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href=""><font color="#F5F5F5" size="2px">赞</font></a>
+<a href=""><font color="#F5F5F5" size="2px">回复</font></a>
+<a href=""><font color="#F5F5F5" size="2px">分享</font></a>
+<a href=""><font color="#F5F5F5" size="2px">举报</font></a>
+</div>
+<hr size="1">
+<br />
+<br />
+<div align="center">
+<a href=""><font color="#F5F5F5" size="3px">上一页</font></a>
+<a href=""><font color="#FF0000" size="3px">1</font></a>
+<a href=""><font color="#FFFFFF" size="3px">2</font></a>
+<a href=""><font color="#FFFFFF" size="3px">3</font></a>
+<a href=""><font color="#FFFFFF" size="3px">4</font></a>
+<a href=""><font color="#F5F5F5" size="3px">...</font></a>
+<a href=""><font color="#FFFFFF" size="3px">8852</font></a>
+<a href=""><font color="#FFFFFF" size="3px">下一页</font></a>
+</div>
+
+
+<br />
+</div>
+
+
+
+
+
+
+</div>
+
+<table align="center" width="40%" border="0"  cellpadding="0" style="margin:auto;">
+<tr>
+<td><a href="关于.html"><font color="#FFFFFF" face="微软雅黑" size="1">| 关于我们 | </font></a></td>
+<td><a href="联系.html"><font color="#FFFFFF" face="微软雅黑" size="1">| 联系我们 | </font></a></td>
+<td><a href="问题.html"><font color="#FFFFFF" face="微软雅黑" size="1">| 问题中心 | </font></a></td>
+</table>
+<h1 align="center"><a href="index.html"><font color="#FF0000" face="华文彩云" size="20">返回推荐</font></a></h1>
+
+<script src="js/down.js"></script>
+<script>
+	$(function(){
+
+		var $eleBtn2 = $("#btn2");
+
+		//方法二：通过form
+		$eleBtn2.click(function(){
+			var $eleForm = $("<form method='get'></form>");
+
+			$eleForm.attr("action","musics/06：41 A.M. - 林峯.mp3");
+
+			$(document.body).append($eleForm);
+
+			//提交表单，实现下载
+			$eleForm.submit();
+		});
+	})
+</script>
+<script>
+	$(function(){
+
+		var $eleBtn2 = $("#btn3");
+
+		//方法二：通过form
+		$eleBtn2.click(function(){
+			var $eleForm = $("<form method='get'></form>");
+
+			$eleForm.attr("action","mv/张杰,Far East Movement - 网易云音乐the X Project张杰 ／ Far East Movement预告片.mp4");
+
+			$(document.body).append($eleForm);
+
+			//提交表单，实现下载
+			$eleForm.submit();
+		});
+	})
+</script>
+</body>
+
+</html>
+
